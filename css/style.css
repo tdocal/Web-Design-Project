@@ -1,48 +1,69 @@
-body, container {
-    background-color:lightgray;
+body {
+    background-color:#d3d3d3;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
-#header {
-    
+.mainNav {
+    background: #273f3f;
+    color: #d3d3d3;    
+    display: grid;
+    grid-template-columns: 9% 5% 70%;
+    width: 100%;
+}
+
+.ribbonNav {
+    color: #d3d3d3;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Aldrich";
+    font-size: 18px;
+}
+
+#compName {
+    align-self: center;
+    font-family: "Aldrich";
+    font-size: 18px;
+}
+
+#logo {
+    margin-top: 5px;
+}
+
+.links {
+    align-self: center;
+    justify-self: center;
+}
+
+.gridLayout {
+    display: inline-grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-left: 15px;
 }
 
 .column {
     float: left;
-    width: 33.33%;
-    height: 338px;
-}
-	
-.ribbonNav {
-    color: lightgray;
-    text-decoration: none;
-}
-	
-.frame {
-    height: 338px;
-    width: 600px;
-    border: none;
-    margin-top: 80px;
-    align-content: center;
-    margin-left: 15px;
 }
 
-h2 {
-    color: darkslategrey;
+h1 {
+    color: #273f3f;
     font-family: "Aldrich";
     font-size: 24px;
     text-align: center;
+    text-rendering: optimizeLegibility;
+}
+	
+h2 {
+    color: #273f3f;
+    font-family: "Aldrich";
+    font-size: 18px;    
+    text-align: center;
+    margin-top: -10px;
 }
 	
 h3 {
-    color: darkslategrey;
-    font-family: "Aldrich";
-    font-size: 18x;
-    text-align: center;
-    margin-top: -20px;
-}
-	
-h4 {
-    color: darkslategrey;
+    color: #273f3f;
     font-family: "Aldrich";
     font-size: 12px;
     text-align: center;
@@ -55,40 +76,15 @@ h4 {
 }
 
 p {
-    color: darkslategrey;
+    color: #273f3f;
     font-family: "Open Sans", serif;
     font-size: 16px;
     margin: 0 auto;
     max-width: 80%;
 }
-	
-.mainNav {
-    background: darkslategrey;
-    overflow: auto;
-    color: lightgray;
-    font-family: "Aldrich";
-    font-size: 18px;
-    display: table;
-    width: 100%;
-}
-
-#header #compname {
-    text-align: center;
-    float: left;
-    display: table-cell;
-    margin-top: 10px;
-    padding-left: 20px;
-}
 
 .mainpic {
     margin-top: 50px;
-}
-
-.links {
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    width: 66%;
 }
 
 li {
@@ -100,9 +96,124 @@ li {
 }
 
 .pic {
-    height: 338px;
-    width: 600px;                
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 50px;
-    align-content: right;
-    padding-left: 15px;
+    width: 95%;
+}
+
+input[type=text] {
+    color: #273f3f;
+    font-family: "Aldrich";
+    font-size: 16px;
+    margin-left: 10px;
+    border: 1px solid #273f3f;
+}
+
+input[type=submit] {
+    color: #ffffff;
+    background-color: #273f3f;
+    font-family: "Aldrich";
+    padding: 8px 32px;
+    font-size: 14px;
+    font-weight: 100;
+    border: none;
+    letter-spacing: 1px;
+}
+
+input[type=submit]:hover {
+    color: #273f3f;
+    background-color: #fafafa;
+}
+
+input[type=submit]:active {
+    color: #273f3f;
+    background-color: #d3d3d3;
+}
+
+textarea {
+    color: #273f3f;
+    font-family: "Aldrich";
+    font-size: 16px;
+    width: 97%;
+    height: 150px;
+    padding: 5px;
+    margin-left: 10px;
+    resize: none;
+    border: 1px solid #273f3f;
+}
+
+.formField {
+    font-family: "Aldrich";
+    font-size: 14px;
+    line-height: 2em;
+    margin-left: 15px;
+}
+
+#resources h2 {
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+#resources p, #resources li {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: "Open Sans";
+}
+
+#resources a:link {
+    text-decoration: none;
+    color: #273f3f;
+    font-weight: 600;
+    margin-left: -20px;
+}
+
+#resources a:visited {
+    text-decoration: none;
+    color: #273f3f;
+    font-weight: 600;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.contactInfo {
+    align-content: center;
+    text-align: center;
+    font-family: "Aldrich";
+    color: #273f3f;
+    margin-top: 15px;
+    margin-bottom: 0 auto;
+    padding: 2px;
+    text-rendering: optimizeLegibility;
+}
+
+caption {
+    text-align: center;
+    font-family: "Aldrich";
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#email, #phone {
+    font-family: "Aldrich";
+    color: #273f3f;
+    padding: 2px;
+}
+
+#location {
+    font-family: "Open Sans";
+    font-size: 14px;
+    padding: 4px;
+}
+
+td {
+    font-family: "Open Sans";
+    padding: 2px;
+    align-self: center;
+    justify-self: center;
 }

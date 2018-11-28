@@ -5,23 +5,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <link href='https://fonts.googleapis.com/css?family=Aldrich|Open+Sans' rel='stylesheet'>
-        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
         
-        <title>Coordinated Technologies</title>
+        <title>Multimedia and Graphic Design Project</title>
         
         <link rel="stylesheet" href="css/style.css">
         <!--<script src="js.script.js"></script>-->
+        <?php include('feedback_process.php'); ?>
     </head>
 
     <body>
         
         <div class="container">
             <div id="header" class="mainNav">
-                <div id="compName" class="logo">
+                <div id="compname" class="logo">
                     <li><em>Coordinated<br>Technologies</em></li>
                 </div>
                 <div id="logo" class="logo">
-                <span><img src="Logo.png" width="60" alt="Coordinated Technologies Logo"></span>
+                <span><img src="Logo.png" width="60" alt="Coordinated Technologies"></span>
                 </div>
                 <div class="links">
                     <ul>
@@ -51,22 +51,26 @@
                         </li>                        
                     </ul>
                 </div>
+                </div>
             </div>
-        </div>
-        
-        <form class="formField" action="welcome.php" method="post">
+
+        <form class="formField" action="feedback_process.php" method="post">
             <br>
             Name:<br>
-            <input type="text" name="name">
+            <input placeholder=" " type="text" name="name" value="<?= $name ?>">
+            <span class="error"><?php =$name_error ?></span>
             <br>
             Email:<br>
-            <input type="text" name="email">
+            <input type="text" name="email" value="<?= $email ?>">
+            <span class="error"><?php =$email_error ?></span>
             <br>
             <br>
             Feedback:<br>
-            <textarea type="text" name="feedback"></textarea>
+            <textarea type="text" name="feedback" value="<?= $feedback ?>"></textarea>
+            <span class="error"><?php =$feedback_error ?></span>
             <br><br>
             <input type="submit" value="Submit">
+            <div class="success"><?= $success ?></div>
         </form>
     
     </body>

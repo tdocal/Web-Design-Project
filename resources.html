@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="intial-scale=1, maximum-scale=1, user-scalabel=no">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <link href='https://fonts.googleapis.com/css?family=Aldrich|Open+Sans' rel='stylesheet'>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
         
-        <title>Multimedia and Graphic Design Project</title>
+        <title>Coordinated Technologies</title>
         
         <link rel="stylesheet" href="css/style.css">
         <!--<script src="js.script.js"></script>-->
-        
     </head>
 
     <body>
         
         <div class="container">
             <div id="header" class="mainNav">
-                <div id="compname" class="logo">
-                    <li><em>Coordinating<br>Technologies</em></li>
+                <div id="compName" class="logo">
+                    <li><em>Coordinated<br>Technologies</em></li>
+                </div>
+                <div id="logo" class="logo">
+                <span><img src="Logo.png" width="60" alt="Coordinated Technologies Logo"></span>
                 </div>
                 <div class="links">
                     <ul>
@@ -47,8 +50,34 @@
                             </a>                      
                     </ul>
                 </div>
-                </div>
-            </div>            
+            </div>
+        </div>
+        
+        <div id="resources">
+            <h2>Rocky Mountain Conservancy</h2>
+            <p>Location information was provided by the Rock Mountain Conservancy in February of 2018. </p>
+            <ul>
+                <li>Ranger District Boundaries were provided by the US Forest Service:</li>
+                <li><a href="https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RangerDistricts_01/MapServer/1">US Forest Service Rest URL</a></li><br>
+                <li>Rocky Mountain National Park Boundary can be found at:</li>
+                <li><a href="https://mapservices.nps.gov/arcgis/rest/services/LandResourcesDivisionTractAndBoundaryService/MapServer/2">National Park Service Rest URL</a></li>
+            </ul>
+            <h2>US Chlamydia Rates 2016</h2>
+            <p>Data taken from the CDC was joined by county name to each county in the US. The height of each county represents the number of reported cases, while the color depth represents the rate per 100,000.</p>
+            <ul>
+                <li>Data provided by the CDC and AtlasPlus can be found at:</li>
+                <li><a href="https://www.cdc.gov/nchhstp/atlas/index.htm?s_cid=bb-od-atlasplus_002">NCHHSTP AtlasPlus</a></li>
+            </ul>
+            <h2>Denver Bridge Integrity</h2>
+            <p>Data provided by FHWA was joined with bridge locations provided by the city and county of Denver by structure ID. Only bridges within Denver county are shown. Bridge sufficency rating is determined by the deck condition, superstructure, substructure, and culvert condition. A rating of 7 or greater is considered good or better, 5-6 is considered fair, and 4 or below is poor.</p>
+            <ul>
+                <li>Bridge data provided by the FHWA:</li>
+                <li><a href="https://www.fhwa.dot.gov/bridge/nbi/ascii2017.cfm">FHWA National Bridge Inventory 2017</a></li><br>
+                <li>Bridge locations provided by the city of Denver:</li>
+                <li><a href="https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-denver-bridges-and-retaining-walls">Denver Open Data</a></li>
+            </ul>
+            
+        </div>
 
         <script>
         
